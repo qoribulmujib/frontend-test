@@ -35,8 +35,8 @@ export const Dashboard = () => {
               <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-2xl underline underline-offset-8 text-center pb-12">
                 Post
               </h2>
-              {post.length > 0 ? (
-                currentItems.map((item) => (
+              {post?.length > 0 ? (
+                currentItems?.map((item) => (
                   <div key={item.id}>
                     <div className="w-80 lg:w-2/3 lg:mx-auto flex justify-items-start py-1">
                       <div className="author pr-4 text-1xl font-bold">
