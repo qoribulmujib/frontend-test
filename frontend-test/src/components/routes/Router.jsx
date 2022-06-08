@@ -7,6 +7,7 @@ import { Dashboard } from "../Dashboard";
 import { Detail } from "../Detail";
 import { Navbar } from "../layout/Navbar";
 import { Layout } from "../layout/Layout";
+import { Comment } from "../Comment";
 export const Router = () => {
   return (
     <>
@@ -28,9 +29,7 @@ export const Router = () => {
               path="login"
               element={
                 <>
-                  <Layout>
-                    <Login />
-                  </Layout>
+                  <Login />
                 </>
               }
             />
@@ -50,6 +49,16 @@ export const Router = () => {
                 <>
                   <Layout>
                     <Navbar /> <Detail />
+                  </Layout>
+                </>
+              }
+            />
+            <Route
+              path="comment/:postId"
+              element={
+                <>
+                  <Layout>
+                    <Navbar /> <Comment />
                   </Layout>
                 </>
               }

@@ -44,7 +44,7 @@ export const Dashboard = () => {
                     <ul className="grid grid-cols-3 gap-4 place-items-end pb-7">
                       <li>
                         <Link
-                          to={`#`}
+                          to={`/comment/${item.id}`}
                           className="text-1xl font-bold text-blue-400"
                         >
                           <IoChatbubbleOutline />
