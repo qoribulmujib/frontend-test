@@ -6,6 +6,7 @@ import { ContextProvider } from "../context/Context";
 import { Dashboard } from "../Dashboard";
 import { Detail } from "../Detail";
 import { Navbar } from "../layout/Navbar";
+import { Layout } from "../layout/Layout";
 export const Router = () => {
   return (
     <>
@@ -16,8 +17,10 @@ export const Router = () => {
               path="/"
               element={
                 <>
-                  <Navbar />
-                  <Branda />
+                  <Layout>
+                    <Navbar />
+                    <Branda />
+                  </Layout>
                 </>
               }
             />
@@ -25,7 +28,9 @@ export const Router = () => {
               path="login"
               element={
                 <>
-                  <Login />
+                  <Layout>
+                    <Login />
+                  </Layout>
                 </>
               }
             />
@@ -33,7 +38,9 @@ export const Router = () => {
               path="dashboard"
               element={
                 <>
-                  <Navbar /> <Dashboard />
+                  <Layout>
+                    <Navbar /> <Dashboard />
+                  </Layout>
                 </>
               }
             />
@@ -41,7 +48,9 @@ export const Router = () => {
               path="detail/:postId"
               element={
                 <>
-                  <Navbar /> <Detail />
+                  <Layout>
+                    <Navbar /> <Detail />
+                  </Layout>
                 </>
               }
             />

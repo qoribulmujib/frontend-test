@@ -16,6 +16,7 @@ Fitur
 - melihat Comment
 - TailwindCss
 - React router dom v6
+- React-paginate
 - React Icon
 - State management React Context
 - Penampilan data di Dashboard yang harus nya seperti di contoh menggunakan users, saya menggunakan id users karena name dari users tidak ada
