@@ -14,16 +14,12 @@ export const Dashboard = () => {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setCurrentItems(post.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(post.length / itemsPerPage));
   }, [itemOffset, itemsPerPage, post]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % post.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
   return (
